@@ -16,18 +16,17 @@
     background-color: rgb(245, 245, 245);
     color: black;
   }
-  
+
   h1 {
     color: black;
   }
 
-
   div.images {
-    border: 1px solid #ccc;
+    border: 5px solid #ccc;
   }
   
   div.images:hover {
-    border: 1px solid #777;
+    border: 7px solid #777;
   }
   
   div.images img {
@@ -39,7 +38,7 @@
     padding: 15px;
     text-align: center;
   }
-  
+
   * {
     box-sizing: border-box;
   }
