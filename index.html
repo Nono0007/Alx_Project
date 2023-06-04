@@ -12,6 +12,7 @@
 
     <img class="img1" src="log-beautyonlong.jpg" alt="ALX_Project">
 
+      <hr>
       <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'Services')">SERVICES</button>
         <button class="tablinks" onclick="openCity(event, 'Location')">LOCATION</button>
@@ -73,6 +74,53 @@
       </div>
       
       <div class="finalfix"></div>
+
+      <form action="appointment.php" method="post">
+        <div class="beautyonlong">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="client_name" placeholder="Your Name" pattern=[A-Z\sa-z]{3,20} required>
+        </div>
+        <div class="beautyonlong">
+          <label for="email">Your E-mail</label>
+          <input type="email" id="email" name="client_email" placeholder="@email.com" required>
+        </div>
+        <div class="beautyonlong">
+          <label for="phone">Your Phone</label>
+          <input type="tel" id="phone" name="client_phone" placeholder="0732654377" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+        </div>
+        <hr>
+        <div class="elem-group inlined">
+          <label for="adult">Adults</label>
+          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="child">Children</label>
+          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="appointment-date">Appointment-Date</label>
+          <input type="date" id="appointment-date" name="appointment" required>
+        </div>
+        <div class="elem-group inlined">
+          <label for="appointment-time">Appointment_time</label>
+          <input type="time" id="appointment-time" name="appointment" required>
+        </div>
+        <div class="beautyonlong">
+          <label for="service-selection">Select Service Preference</label>
+          <select id="service-selection" name="service_preference" required>
+              <option value="">Choose a service from the list</option>
+              <option value="connecting">Haircut</option>
+              <option value="adjoining">Brading and Installation</option>
+              <option value="adjacent">Nails</option>
+          </select>
+        </div>
+        <hr>
+        <div class="beautyonlong">
+          <label for="message">Anything Else?</label>
+          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." optional></textarea>
+        </div>
+        <button type="submit">Book The Appointment</button>
+      </form>
 
       <script src="script.js"></script>
 </body>
