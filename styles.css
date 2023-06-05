@@ -183,3 +183,11 @@ body {
   button:hover {
     border: 2px solid black;
   }
+
+  p {
+    color: goldenrod;
+  }
+
+  h3 {
+    color: rgb(218, 165, 32);
+  }
