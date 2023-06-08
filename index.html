@@ -1,134 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>BEAUTY ON LONG</h1>
 
-    <img class="img1" src="log-beautyonlong.jpg" alt="ALX_Project">
+    <img class="img1" src="log-beautyonlong.jpg" alt="ALX_Project" />
 
-      <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'Services')">SERVICES</button>
-        <button class="tablinks" onclick="openCity(event, 'Location')">LOCATION</button>
-        <button class="tablinks" onclick="openCity(event, 'Contact')">CONTACT</button>
-      </div>
-      
-      <div id="Services" class="tabcontent">
-        <h3>Services</h3>
-        <p>We are a unisex hair beauty, we do all hairstyles, installations, nails, hair colour, hair treatment,
-            cut and fade, makeup, lashes, wig treatment and color</p>
-      </div>
-      
-      <div id="Location" class="tabcontent">
-        <h3>Location</h3>
-        <p>232 Long Street Capetown</p> 
-      </div>
-      
-      <div id="Contact" class="tabcontent">
-        <h3>Contact</h3>
-        <p>Call or Whatsapp on 0717919649 or email us on khisasuzanne@yahoo.com</p>
-      </div>
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'Services')">
+        SERVICES
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Location')">
+        LOCATION
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Contact')">
+        CONTACT
+      </button>
+    </div>
 
-      <h2>Services</h2>
+    <div id="Services" class="tabcontent">
+      <h3>Services</h3>
+      <p>
+        We are a unisex hair beauty, we do all hairstyles, installations, nails,
+        hair colour, hair treatment, cut and fade, makeup, lashes, wig treatment
+        and color
+      </p>
+    </div>
+
+    <div id="Location" class="tabcontent">
+      <h3>Location</h3>
+      <p>232 Long Street Capetown</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <h3>Contact</h3>
+      <p>
+        Call or Whatsapp on 0717919649 or email us on khisasuzanne@yahoo.com
+      </p>
+    </div>
+
+    <h2>Services</h2>
 
     <div class="imagegallary">
-        <div class="images">
-          <a target="_blank" href="cut-image2.jpg">
-            <img src="cut-image2.jpg" alt="ALX_Project">
-          </a>
-          <div class="Service">HAIRCUTS, FADE AND DESIGNS</div>
-        </div>
+      <div class="images">
+        <a target="_blank" href="cut-image2.jpg">
+          <img src="cut-image2.jpg" alt="ALX_Project" />
+        </a>
+        <div class="Service">HAIRCUTS, FADE AND DESIGNS</div>
       </div>
-      
-      <div class="imagegallary">
-        <div class="images">
-          <a target="_blank" href="nails-image1.jpg">
-            <img src="nails-image1.jpg" alt="ALX_Project">
-          </a>
-          <div class="Service">NAILS, ART AND DESIGN</div>
-        </div>
+    </div>
+
+    <div class="imagegallary">
+      <div class="images">
+        <a target="_blank" href="nails-image1.jpg">
+          <img src="nails-image1.jpg" alt="ALX_Project" />
+        </a>
+        <div class="Service">NAILS, ART AND DESIGN</div>
       </div>
-      
-      <div class="imagegallary">
-        <div class="images">
-          <a target="_blank" href="hair-installation.jpg">
-            <img src="hair-installation.jpg" alt="ALX_Project">
-          </a>
-          <div class="Service">HAIR INSTALLATION AND MAKEUP</div>
-        </div>
+    </div>
+
+    <div class="imagegallary">
+      <div class="images">
+        <a target="_blank" href="hair-installation.jpg">
+          <img src="hair-installation.jpg" alt="ALX_Project" />
+        </a>
+        <div class="Service">HAIR INSTALLATION AND MAKEUP</div>
       </div>
+    </div>
 
-      <div class="imagegallary">
-        <div class="images">
-          <a target="_blank" href="hair-color1.jpg">
-            <img src="hair-color1.jpg" alt="ALX_Project">
-          </a>
-          <div class="Service">HAIRCUT AND COLOUR</div>
-        </div>
+    <div class="imagegallary">
+      <div class="images">
+        <a target="_blank" href="hair-color1.jpg">
+          <img src="hair-color1.jpg" alt="ALX_Project" />
+        </a>
+        <div class="Service">HAIRCUT AND COLOUR</div>
       </div>
-      
-      <div class="finalfix"></div>
+    </div>
 
-      <h3>About Us</h3>
-      <p>We are a unisex saloon, we do all Your beauty hairstyles and hair cut not forgeting your
-        pedicure and manucure, kids cuts and hairstyles all under one roof. Dear head lovers we have
-        we are here for you and feel free to book your appointment below we're at your service. We also provide
-        home services just book your appoint and add in the additional section for us to know what you want 
-        our team to provide for you.
-      </p>
+    <div class="finalfix"></div>
 
-      <form action="appointment.php" method="post">
-        <div class="beautyonlong">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="client_name" placeholder="Your Name" pattern=[A-Z\sa-z]{3,20} required>
-        </div>
-        <div class="beautyonlong">
-          <label for="email">Your E-mail</label>
-          <input type="email" id="email" name="client_email" placeholder="@email.com" required>
-        </div>
-        <div class="beautyonlong">
-          <label for="phone">Your Phone</label>
-          <input type="tel" id="phone" name="client_phone" placeholder="0732654377" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
-        </div>
-        <hr>
-        <div class="elem-group inlined">
-          <label for="adult">Adults</label>
-          <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="child">Children</label>
-          <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="appointment-date">Appointment-Date</label>
-          <input type="date" id="appointment-date" name="appointment" required>
-        </div>
-        <div class="elem-group inlined">
-          <label for="appointment-time">Appointment_time</label>
-          <input type="time" id="appointment-time" name="appointment" required>
-        </div>
-        <div class="beautyonlong">
-          <label for="service-selection">Select Service Preference</label>
-          <select id="service-selection" name="service_preference" required>
-              <option value="">Choose a service from the list</option>
-              <option value="connecting">Haircut</option>
-              <option value="adjoining">Brading and Installation</option>
-              <option value="adjacent">Nails</option>
-          </select>
-        </div>
-        <hr>
-        <div class="beautyonlong">
-          <label for="message">Anything Else?</label>
-          <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." optional></textarea>
-        </div>
-        <button type="submit">Book The Appointment</button>
-      </form>
+    <h3>About Us</h3>
+    <p>
+      We are a unisex saloon, we do all Your beauty hairstyles and hair cut not
+      forgeting your pedicure and manucure, kids cuts and hairstyles all under
+      one roof. Dear head lovers we have we are here for you and feel free to
+      book your appointment below we're at your service. We also provide home
+      services just book your appoint and add in the additional section for us
+      to know what you want our team to provide for you.
+    </p>
 
-      <script src="script.js"></script>
-</body>
+    <form action="appointment.php" method="get">
+      <div class="beautyonlong">
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          id="name"
+          name="client_name"
+          placeholder="Your Name"
+          pattern="[A-Z\sa-z]{3,20}"
+          required
+        />
+      </div>
+      <div class="beautyonlong">
+        <label for="email">Your E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="client_email"
+          placeholder="@email.com"
+          required
+        />
+      </div>
+      <div class="beautyonlong">
+        <label for="phone">Your Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="client_phone"
+          placeholder="0732654377"
+          pattern="(\d{3})-?\s?(\d{3})-?\s?(\d{4})"
+          required
+        />
+      </div>
+      <hr />
+      <div class="elem-group inlined">
+        <label for="adult">Adults</label>
+        <input
+          type="number"
+          id="adult"
+          name="total_adults"
+          placeholder="2"
+          min="1"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="child">Children</label>
+        <input
+          type="number"
+          id="child"
+          name="total_children"
+          placeholder="2"
+          min="0"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="appointment-date">Appointment-Date</label>
+        <input
+          type="date"
+          id="appointment-date"
+          name="appointment_date"
+          required
+        />
+      </div>
+      <div class="elem-group inlined">
+        <label for="appointment-time">Appointment_time</label>
+        <input
+          type="time"
+          id="appointment-time"
+          name="appointment_time"
+          required
+        />
+      </div>
+      <div class="beautyonlong">
+        <label for="service-selection">Select Service Preference</label>
+        <select id="service-selection" name="service_preference" required>
+          <option value="">Choose a service from the list</option>
+          <option value="connecting">Haircut</option>
+          <option value="adjoining">Brading and Installation</option>
+          <option value="adjacent">Nails</option>
+        </select>
+      </div>
+      <hr />
+      <div class="beautyonlong">
+        <label for="message">Anything Else?</label>
+        <textarea
+          id="message"
+          name="visitor_message"
+          placeholder="Tell us anything else that might be important."
+          optional
+        ></textarea>
+      </div>
+      <button type="submit">Book The Appointment</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
